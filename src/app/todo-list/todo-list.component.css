@@ -1,0 +1,60 @@
+input {
+    display: block;
+    padding: 1em;
+}
+.inputContainer {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    margin: 1em auto;
+}
+.addTodo {
+    display: block;
+    padding: 1em;
+    cursor: pointer;
+}
+
+.todoList {
+    list-style: none;
+    display: block;
+    margin: 1em auto;
+    padding: 0;
+}
+.todoItem {
+    display: grid;
+    grid-template-columns: 5fr 50px 50px;
+    background-color: #d8d8d8;
+    box-shadow: 2px 2px 5px #cacaca;
+    border-radius: 5px;
+    margin: 2em 0;
+    padding: 1em;
+}
+.todoText {
+    text-align: center;
+    grid-column: 1/2;
+}
+.btnTask {
+    background: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+.btnTask:hover {
+    background-color: #cfcece;
+}
+.btnComplete {
+    grid-column: 2/3;
+}
+.btnDelete {
+    grid-column: 3/4;
+}
+
+
+.complete {
+    background-color: #6dffc2;
+}
+.complete .todoText {
+    text-decoration: line-through;
+}
+.complete .btnTask:hover {
+    background-color: #59ce9d;
+}
